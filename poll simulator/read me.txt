@@ -1,0 +1,18 @@
+Respected sir,
+
+	Firstly i am apologizing because the Poll simulator is incomplete.
+	reason:- i am unable to catch the logic behind how to store the counts and the vote in local storage without using databases.
+		1. i tried using document.localstorge function
+		2. i tried using document.sessionstorage function.
+		3. i tried array and search for many more.
+	i stucked many times in this problem but i was unable to get that storage locally on the browser.
+
+i created home page, candidates page where already some students are registered, 
+i created voting page where voters can vote and after that they will get the alert window for success vote.
+
+if i was unable to understand the complete task so i am really sorry for that and i am still finding solution for this and 
+analysing my mistakes, and if i am unable to find the solution than i will ask from you.
+
+Thank You
+Shivam Gupta
+Student id:- 202012086

@@ -1,0 +1,41 @@
+<DOCTYPE html>
+    <html>
+    <body>
+        <h2>Registered Candidates</h2><br>
+<!-- 
+        here i am trying to add vote function so i displayed by Javascript not from html 
+        but stuck many times -->
+
+    <script>
+var names = [];
+names[0] = ("1. Vijay Shekhar Sharma");
+localStorage.setItem("names", JSON.stringify(names));
+
+names[1] = ("2. Ritesh Agarwal");
+localStorage.setItem("names", JSON.stringify(names));
+
+names[2] = ("3. Pranay Chulet");
+localStorage.setItem("names", JSON.stringify(names));
+
+names[3] = ("4. Mukesh Bansal");
+localStorage.setItem("names", JSON.stringify(names));
+
+names[4] = ("5. Kunal Bahl");
+localStorage.setItem("names", JSON.stringify(names));
+
+var storedNames = JSON.parse(localStorage.getItem("names"));
+document.write("<pre>");
+document.write(names[0]);
+document.write("<pre>");
+document.write(names[1]);
+document.write("<pre>");
+document.write(names[2]);
+document.write("<pre>");
+document.write(names[3]);
+document.write("<pre>");
+document.write(names[4]);
+document.write("<pre>");
+    </script>
+    </body>
+    </html>
+    

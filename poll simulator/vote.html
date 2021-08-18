@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="C:\Users\Shivam Gupta\OneDrive\Desktop\intership\poll simulator\function.js"></script>
+        <title>Candidates</title>
+</head>
+<body>
+    <h2>Registered Candidates</h2><br>
+    
+    <form>
+        <input type="radio" name="choice" value="Vijay Shekhar Sharma" id="vijay"> 
+        <label for="vijay">1. Vijay Shekhar Sharma</label><br>
+        <input type="radio" name="choice" value="Ritesh Agarwal" id="ritesh"> 
+        <label for="ritesh">2. Ritesh Agarwal</label><br>
+        <input type="radio" name="choice" value="Pranay Chulet" id="pranay"> 
+        <label for="pranay">3. Pranay Chulet</label><br>
+        <input type="radio" name="choice" value="Mukesh Bansal" id="mukesh"> 
+        <label for="mukesh">4. Mukesh Bansal</label><br>
+        <input type="radio" name="choice" value="Kunal Bahl" id="kunal">
+        <label for="kunal">5. Kunal Bahl</label><br><br>
+        <button id="btn">Vote</button>
+    </form>
+    <script>
+        const btn = document.querySelector('#btn');
+        // handle button click
+        btn.onclick = function () {
+            const rbs = document.querySelectorAll('input[name="choice"]');
+            let selectedValue;
+            for (const rb of rbs) {
+                if (rb.checked) {
+                    selectedValue = rb.value;
+                    break;
+                }
+            }
+            alert("You voted  " + selectedValue);
+        };
+    </script>
+
+</body>
+</html>
